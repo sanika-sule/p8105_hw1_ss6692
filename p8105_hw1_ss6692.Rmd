@@ -3,9 +3,25 @@ title: "p8105_hw1_ss6692"
 output: html_document
 date: "2023-09-22"
 ---
+#P8015 Homework 1
 ```{r} 
 library(moderndive)
 data("early_january_weather")
 ```
+#Problem 1
+
+Early January Weather describes weather details recorded at `EWR` using the `origin` variable from in `2013` from January `r min(early_january_weather$day)` to `r max(early_january_weather$day)`. Temperature is measured in Fahrenheit with the variable `temp`and values range from `r min(early_january_weather$temp)` to `r max(early_january_weather$temp)`. The variable `wind_speed` ranges from `r min(early_january_weather$wind_speed)` to `r max(early_january_weather$speed)` and humidity ranges from `r min(early_january_weather$humid)` to `r max(early_january_weather$humid)`.
 
 The mean temperature is `r mean(early_january_weather$temp)`.
+
+In this data set, there are `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)`columns.
+
+
+
+
+
+
+
+
+
+
