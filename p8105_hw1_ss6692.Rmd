@@ -17,6 +17,19 @@ The mean temperature is `r mean(early_january_weather$temp)`.
 
 In this data set, there are `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
 
+```{r}
+data.frame("early_january_weather")
+x = early_january_weather$"time_hour"
+y = early_january_weather$"temp"
+
+ggplot(early_january_weather, aes(x = x, y = y, color=humid)) + geom_point()
+
+ggsave("scatter_plot.pdf", height = 4, width = 6)
+
+```
+
+
+The variables `time_hour` and `temp` have an positive relationship. As the scatter plot shows, as time passes throughout the day, the temperature increases.
 
 
 
