@@ -1,0 +1,11 @@
+---
+title: "p8105_hw1_ss6692"
+output: html_document
+date: "2023-09-22"
+---
+```{r} 
+library(moderndive)
+data("early_january_weather")
+```
+
+The mean temperature is `r mean(early_january_weather$temp)`.
