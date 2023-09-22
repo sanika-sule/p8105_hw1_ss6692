@@ -5,6 +5,7 @@ date: "2023-09-22"
 ---
 #P8015 Homework 1
 ```{r} 
+library(tidyverse)
 library(moderndive)
 data("early_january_weather")
 ```
@@ -15,7 +16,6 @@ Early January Weather describes weather details recorded at `EWR` using the `ori
 The mean temperature is `r mean(early_january_weather$temp)`.
 
 In this data set, there are `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
-
 
 
 
